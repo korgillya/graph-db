@@ -1,0 +1,314 @@
+//people
+
+{
+  "nodeId": "jerry",
+  "nodeType": "Person",
+  "properties": [
+    {
+      "name": "name",
+      "type": "String",
+      "value": "Jerry"
+    },
+    {
+      "name": "age",
+      "type": "int",
+      "value": "50"
+    }
+  ]
+}
+
+{
+  "nodeId": "tom",
+  "nodeType": "Person",
+  "properties": [
+    {
+      "name": "name",
+      "type": "String",
+      "value": "Tom"
+    },
+    {
+      "name": "age",
+      "type": "int",
+      "value": "45"
+    }
+  ]
+}
+
+{
+  "nodeId": "mike",
+  "nodeType": "Person",
+  "properties": [
+    {
+      "name": "name",
+      "type": "String",
+      "value": "Mike"
+    },
+    {
+      "name": "age",
+      "type": "int",
+      "value": "38"
+    }
+  ]
+}
+
+
+{
+  "nodeId": "donald",
+  "nodeType": "Person",
+  "properties": [
+    {
+      "name": "name",
+      "type": "String",
+      "value": "Donald"
+    },
+    {
+      "name": "age",
+      "type": "int",
+      "value": "33"
+    }
+  ]
+}
+
+
+
+//businesses
+{
+  "nodeId": "coffeeshop",
+  "nodeType": "Business",
+  "properties": [
+    {
+      "name": "name",
+      "type": "String",
+      "value": "Coffee Shop"
+    },
+    {
+      "name": "location",
+      "type": "String",
+      "value": "New York"
+    }
+  ]
+}
+
+{
+  "nodeId": "bakery",
+  "nodeType": "Business",
+  "properties": [
+    {
+      "name": "name",
+      "type": "String",
+      "value": "Bakery"
+    },
+    {
+      "name": "location",
+      "type": "String",
+      "value": "New York"
+    }
+  ]
+}
+
+
+{
+  "nodeId": "grocery",
+  "nodeType": "Business",
+  "properties": [
+    {
+      "name": "name",
+      "type": "String",
+      "value": "Grocery"
+    },
+    {
+      "name": "location",
+      "type": "String",
+      "value": "Los Angeles"
+    }
+  ]
+}
+
+
+
+//contracts
+
+{
+  "nodeId": "cto",
+  "nodeType": "Contract",
+  "properties": [
+    {
+      "name": "date",
+      "type": "String",
+      "value": "01-01-2020"
+    },
+    {
+      "name": "salary",
+      "type": "String",
+      "value": "USD 100000"
+    },
+    {
+      "name": "position",
+      "type": "String",
+      "value": "CTO"
+    }
+  ]
+}
+
+{
+  "nodeId": "ceo",
+  "nodeType": "Contract",
+  "properties": [
+    {
+      "name": "date",
+      "type": "String",
+      "value": "02-02-2019"
+    },
+    {
+      "name": "salary",
+      "type": "String",
+      "value": "USD 80000"
+    },
+    {
+      "name": "position",
+      "type": "String",
+      "value": "CEO"
+    }
+  ]
+}
+
+{
+  "nodeId": "manager",
+  "nodeType": "Contract",
+  "properties": [
+    {
+      "name": "date",
+      "type": "String",
+      "value": "03-03-2019"
+    },
+    {
+      "name": "salary",
+      "type": "String",
+      "value": "USD 90000"
+    },
+    {
+      "name": "position",
+      "type": "String",
+      "value": "Manager"
+    }
+  ]
+}
+
+//relations:
+
+FRIEND relations
+
+{
+  "sourceId":"jerry",
+  "targetId":"tom",
+  "name":"FRIEND",
+  "properties":[]
+}
+
+{
+  "sourceId":"jerry",
+  "targetId":"donald",
+  "name":"FRIEND",
+  "properties":[]
+}
+
+{
+  "sourceId":"donald",
+  "targetId":"tom",
+  "name":"FRIEND",
+  "properties":[]
+}
+
+{
+  "sourceId":"mike",
+  "targetId":"tom",
+  "name":"FRIEND",
+  "properties":[]
+}
+
+
+EMPLOYEED_BY relations
+
+{
+  "sourceId":"tom",
+  "targetId":"coffeeshop",
+  "name":"EMPLOYEED_BY",
+  "properties":[]
+}
+
+{
+  "sourceId":"jerry",
+  "targetId":"bakery",
+  "name":"EMPLOYEED_BY",
+  "properties":[]
+}
+
+{
+  "sourceId":"donald",
+  "targetId":"grocery",
+  "name":"EMPLOYEED_BY",
+  "properties":[{
+      "name": "position",
+      "type": "String",
+      "value": "Branch manager"
+    }]
+}
+
+FOLLOWING relations
+
+{
+  "sourceId":"donald",
+  "targetId":"manager",
+  "name":"FOLLOWING",
+  "properties":[]
+}
+
+{
+  "sourceId":"grocery",
+  "targetId":"manager",
+  "name":"FOLLOWING",
+  "properties":[]
+}
+
+
+{
+  "sourceId":"tom",
+  "targetId":"cto",
+  "name":"FOLLOWING",
+  "properties":[]
+}
+
+{
+  "sourceId":"coffeeshop",
+  "targetId":"cto",
+  "name":"FOLLOWING",
+  "properties":[]
+}
+
+{
+  "sourceId":"jerry",
+  "targetId":"ceo",
+  "name":"FOLLOWING",
+  "properties":[]
+}
+
+{
+  "sourceId":"bakery",
+  "targetId":"ceo",
+  "name":"FOLLOWING",
+  "properties":[]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
